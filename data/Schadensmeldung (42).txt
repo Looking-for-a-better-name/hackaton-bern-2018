@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 25.06.2018
+Schadenshergang: Spayereien
+Schadensursache: Vandalismus
+Beschädigte Gebäudeteile: Fassade
+Beschädigte Umgebung:
+Beschädigte Geräte:
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Nein
+Beschreibung der Sofortmassnahmen:
+Schaden behoben: Nein
+Offerte vorhanden: Ja
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): 678.00
+Selbsteinschätzung: Nein
+Fachauskunft: Ja
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Ja
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:

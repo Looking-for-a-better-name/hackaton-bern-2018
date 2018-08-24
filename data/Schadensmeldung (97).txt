@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 16.07.2018
+Schadenshergang: wasser drückte durch Kamin
+Schadensursache: Regen-/Schnee-/Schmelzwasser
+Beschädigte Gebäudeteile: mauer farbe-verputz
+Beschädigte Umgebung:
+Beschädigte Geräte:
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Nein
+Beschreibung der Sofortmassnahmen:
+Schaden behoben: Nein
+Offerte vorhanden: Ja
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): 1200.-
+Selbsteinschätzung: Nein
+Fachauskunft: Nein
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Nein
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:

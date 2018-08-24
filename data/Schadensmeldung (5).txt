@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 27.07.2018
+Schadenshergang: Beim Schleudergang machte die Waschmaschine enormen Lärm, danach kam eine Fehlermeldung, welche das Aufgebot eines Technikers notwendig machte
+Schadensursache: Gebäudetechnik
+Beschädigte Gebäudeteile:
+Beschädigte Umgebung:
+Beschädigte Geräte: Waschmaschine
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen: Ersatz der Waschmaschine
+Schaden behoben: Ja
+Offerte vorhanden: Ja
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): 1432.00
+Selbsteinschätzung: Nein
+Fachauskunft: Ja
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Nein
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen: Bereits am 11. Juni trat ein anderer Schaden an der Waschmaschine auf, welcher behoben wurde. Der erneute Schaden macht nun den Ersatz des Gerätes notwendig.

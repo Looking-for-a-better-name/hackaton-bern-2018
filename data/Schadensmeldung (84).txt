@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 23.7.18
+Schadenshergang: Der Schimmel wurde im Keller entdeckt.
+Schadensursache: Gebäudehaftpflichtsfall
+Beschädigte Gebäudeteile: Keller Boden/Wände
+Beschädigte Umgebung:
+Beschädigte Geräte:
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen: Es wurde ein Bauexperte aufgeboten. Dieser wird den Schaden am 31.8.18 vor Ort besichtigen und Offerten für die Sanierung einholen.
+Schaden behoben: Nein
+Offerte vorhanden: Nein
+Wiederherstellungs- kosten (CHF/inkl. MwSt.):
+Selbsteinschätzung: Nein
+Fachauskunft: Ja
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Ja
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:

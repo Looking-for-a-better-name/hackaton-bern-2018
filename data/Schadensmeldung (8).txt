@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 03.01.2018
+Schadenshergang: Dach beschädigt
+Schadensursache: Sturmwind
+Beschädigte Gebäudeteile: Dachziegel
+Beschädigte Umgebung: nein
+Beschädigte Geräte: nein
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen:
+Schaden behoben: Ja
+Offerte vorhanden: Ja
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): 108-50
+Selbsteinschätzung: Nein
+Fachauskunft: Ja
+Rechnung vorhanden?: Ja
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Nein
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen: Rechnung wurde von Eigentümer schon beglichen.

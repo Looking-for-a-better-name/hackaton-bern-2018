@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 20.05.2018
+Schadenshergang: Kurzzeitige starke Windböen haben zur Zerstörung der Sonnenstore geführt
+Schadensursache: Sturmwind
+Beschädigte Gebäudeteile:
+Beschädigte Umgebung: elektrische Sonnenstore
+Beschädigte Geräte:
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen: Demontage Sonnenstore
+Schaden behoben: Nein
+Offerte vorhanden: Nein
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): 2500
+Selbsteinschätzung: Ja
+Fachauskunft: Nein
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Nein
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:

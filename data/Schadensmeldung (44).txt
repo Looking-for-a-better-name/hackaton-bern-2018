@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 01.08.2018
+Schadenshergang: Starke Windstösse wehten Ziegel vom Scheunendach.
+Schadensursache: Sturmwind
+Beschädigte Gebäudeteile: Dach
+Beschädigte Umgebung:
+Beschädigte Geräte:
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen: Eindecken mit neuen Ziegeln.
+Schaden behoben: Nein
+Offerte vorhanden: Nein
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): Fr. 500.- ca.
+Selbsteinschätzung: Ja
+Fachauskunft: Nein
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Ja
+Bei Gerätschäden: Reparatur möglich?Ja
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:

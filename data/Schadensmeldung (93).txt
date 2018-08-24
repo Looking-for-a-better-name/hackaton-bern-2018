@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 20.07.2018
+Schadenshergang: Durch das heftige Gewitter mit Hagel wurden die Ortladen beschädigt.
+Schadensursache: Hagel
+Beschädigte Gebäudeteile: Ortladen, weiteres nicht bekannt
+Beschädigte Umgebung:
+Beschädigte Geräte:
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Nein
+Beschreibung der Sofortmassnahmen:
+Schaden behoben: Nein
+Offerte vorhanden: Nein
+Wiederherstellungs- kosten (CHF/inkl. MwSt.):
+Selbsteinschätzung: Nein
+Fachauskunft: Nein
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Nein
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:

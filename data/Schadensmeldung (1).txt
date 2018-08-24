@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 29.07.2018
+Schadenshergang: Stromunterbruch der Elektra Fraubrunnen
+Schadensursache: Gebäudetechnik
+Beschädigte Gebäudeteile: Beleuchtungssteuerung im Restaurant Linde.
+Beschädigte Umgebung:
+Beschädigte Geräte: Steuerung
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen: Der Elektriker hat die Dimmer durch Schalter ersetzt und nach Behebung der Störung am Elektronetz die Dimmer wieder eingebaut.
+Schaden behoben: Ja
+Offerte vorhanden: Nein
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): 400.00
+Selbsteinschätzung: Nein
+Fachauskunft: Ja
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Ja
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:

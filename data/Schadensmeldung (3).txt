@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 20.07.2018
+Schadenshergang: Aufgrund der Störungsmeldung hat der Service-Techniker von der Schindler AG festgestellt, dass an einer Komponente auf Grund äussere Einflüsse eine Reparatur notwendig war (Blitzschlag)
+Schadensursache: Blitzschlag
+Beschädigte Gebäudeteile:
+Beschädigte Umgebung:
+Beschädigte Geräte: Lift
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen: Störungsmeldung wurde behoben
+Schaden behoben: Ja
+Offerte vorhanden: Nein
+Wiederherstellungs- kosten (CHF/inkl. MwSt.): 134.10
+Selbsteinschätzung: Nein
+Fachauskunft: Nein
+Rechnung vorhanden?: Ja
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Ja
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen: Rechnung in der Beilage

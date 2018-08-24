@@ -1,0 +1,26 @@
+Ihre Daten
+Datum des Ereignisses: 26.07.2018
+Schadenshergang: Graffiti an Fassade
+Schadensursache: Vandalismus
+Beschädigte Gebäudeteile: Fassade
+Beschädigte Umgebung:
+Beschädigte Geräte:
+Weitere Informationen:
+
+Angaben zu den Wiederherstellungskosten
+Sofortmassnahmen:Ja
+Beschreibung der Sofortmassnahmen: Maler wurde beauftragt
+Schaden behoben: Nein
+Offerte vorhanden: Nein
+Wiederherstellungs- kosten (CHF/inkl. MwSt.):
+Selbsteinschätzung: Nein
+Fachauskunft: Nein
+Rechnung vorhanden?: Nein
+
+Angaben zu den Wiederherstellungsmassnahmen
+Eigenleistung: Nein
+Bei Gerätschäden: Reparatur möglich?Ja
+Besteht bei einem anderen Versicherer ebenfalls eine Deckung für dasselbe Risiko?Nein
+Name der Versicherung:
+Policen-Nummer:
+Weitere Informationen:
