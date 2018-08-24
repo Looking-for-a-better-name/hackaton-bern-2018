@@ -1,0 +1,61 @@
+// 1. is complex 0 is simple
+const en = {
+  'BliBlitzschlag direkt': 1,
+  'Burglary': 0,
+  'electrical overvoltage during thunderstorms': 0,
+  'Landslide': 1,
+  'Vehicle impact': 0,
+  'Fire': 1,
+  'Building collapse': 1,
+  'Building Technology': 1,
+  'Glass breakage': 0,
+  'Groundwater': 1,
+  'Hail': 0,
+  'HighWater': 1,
+  'Avalanche': 1,
+  'Line break': 1,
+  'Marten, rodents, insects': 1,
+  'Rain, snow, melt water': 0,
+  'Cracks in Facade': 1,
+  'Snow pressure': 1,
+  'Solar system: damage / destruction / theft system': 0,
+  'Rockfall': 1,
+  'Stormwind': 0,
+  'Vandalism': 0,
+  'Water: Frost': 0,
+  'Water: backwater': 1,
+  'Flood': 1,
+}
+
+const de = {
+  'BliBlitzschlag direkt': 1,
+  'Einbruchdiebstahl': 0,
+  'elektrische Überspannung bei Gewitter': 0,
+  'Erdrutsch': 1,
+  'Fahrzeuganprall': 0,
+  'Feuer': 1,
+  'Gebäudeeinsturz': 1,
+  'Gebäudetechnik': 1,
+  'Glasbruch': 0,
+  'Grund-/Hangwasser': 1,
+  'Hagel': 0,
+  'Hochwasser': 1,
+  'Lawine': 1,
+  'Leitungsbruch': 1,
+  'Marder-, Nager, Insekten': 1,
+  'Regen-, Schnee-, Schmelzwasser':0,
+  'Risse in Fassade': 1,
+  'Schneedruck': 1,
+  'Solaranlage: Beschädigung/Zerstörung/ Diebstahl Anlage': 0
+  'Steinschlag': 1,
+  'Sturmwind': 0,
+  'Vandalismus': 0,
+  'Wasser: Frost': 0,
+  'Wasser: Rückstau': 1,
+  'Überschwemmung': 1,
+}
+
+module.exports = {
+  de,
+  en
+}
