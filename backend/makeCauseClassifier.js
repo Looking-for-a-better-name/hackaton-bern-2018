@@ -15,7 +15,6 @@ const toClaimType = label => ({
   // 4: 'insects'
 }[label] || 'other')
 
-
 claims.map(({ dmg, cat }) =>
   dmg && dmgClassifier.addDocument(dmg, toClaimType(cat)))
 
@@ -24,10 +23,6 @@ claims.map(({ desc, cat }) =>
 
 claims.map(({ dmg, desc, cat }) =>
   allClassifier.addDocument(dmg + ' ' + desc, toClaimType(cat)))
-// dmgClassifier.addDocument('i am long qqqq', toClaimType(0))
-// dmgClassifier.addDocument('buy the q\'s', toClaimType(0))
-// dmgClassifier.addDocument('short gold', 'sell')
-// dmgClassifier.addDocument('sell gold', 'sell')
 
 dmgClassifier.train()
 descClassifier.train()
@@ -108,7 +103,7 @@ const loadClassifier = (classifierFile) =>
   ))
 
 // Test serialization
-saveClassifier(dmgClassifier, classifierFile)
+saveClassifier(allClassifier, classifierFile)
   .then(e => {
     console.log('saved')
   })
