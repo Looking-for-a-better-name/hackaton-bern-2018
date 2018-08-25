@@ -271,7 +271,8 @@ module.exports = [
   { dmg: 'hail', desc: '' },
   {
     dmg: 'flood UG and EG',
-    desc: 'Pumping out the UGS An employee of the GVB (Mr. Born) was already on the last Saturday v',,
+    desc: 'Pumping out the UGS An employee of the GVB (Mr. Born) was already on the last Saturday v'
+  },
   {
     dmg: 'Brand after Steamtram',
     desc: 'Deleted with water hose in ridges Steam tram has released soot particles onto dry cypresses. These have ignited in the crown and triggered a fire. The fire department of the city of Bern has made a rapport. '
