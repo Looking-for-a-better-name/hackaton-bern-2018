@@ -1,0 +1,14 @@
+.tiles{
+  display: flex;
+  flex-flow: wrap;
+}
+
+.mat-button {
+  color: white;
+  background-color: rgb(75, 75, 75);
+  padding: 0px 20px;
+}
+
+.mat-button:hover {
+  background-color: black;
+}

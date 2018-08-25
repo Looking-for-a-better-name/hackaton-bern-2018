@@ -1,0 +1,23 @@
+.menu-card {
+  max-width: 200px;
+  margin: 20px;
+}
+
+.card-icons {
+  font-size: 200%;
+  color: rgb(145, 51, 43);
+  vertical-align: middle;
+}
+
+.mat-card-content {
+  padding-top: 10px;
+}
+
+.card-title {
+  display: inline-block;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
