@@ -15,6 +15,10 @@ html, body {
     height: 100%;
 }
 
+a {
+    color: #ffffff;
+}
+
 body {
     background-color: #ffffff;
     background-size: cover;
@@ -170,7 +174,7 @@ Messages
 .messages .message.message-personal {
     float: right;
     color: #fff;
-    text-align: right;
+    text-align: left;
     /*background: -webkit-linear-gradient(330deg, #248A52, #257287);
     background: linear-gradient(120deg, #248A52, #257287);*/
     border-radius: 10px 10px 0 10px;
@@ -183,6 +187,10 @@ Messages
     border-left: 5px solid transparent;
     /*border-top: 4px solid #257287;*/
     bottom: -4px;
+}
+
+hr {
+    border: 1px solid #ffffff;
 }
 
 .messages .message:last-child {
@@ -262,7 +270,7 @@ Messages
     margin-top: 4px;
     -webkit-animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
     animation: ball 0.45s cubic-bezier(0, 0, 0.15, 1) alternate infinite;
-    margin-left: 12px;
+    margin-left: 10px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
 }
