@@ -89,7 +89,7 @@ function insertBotMessage(obj) {
 }
 
 function welcomeMessage() {
-    insertBotMessage({text: "Hi Jeff, I'm Gooby. Your personnal damage report assistant.", callback: function() {
+    insertBotMessage({text: "Hi Jeff, I'm Gooby. Your personal damage report assistant.", callback: function() {
             insertBotMessage({text:"How can I help you? 🤪"});
             askFor(null);
             askMagicApi();
@@ -100,7 +100,7 @@ function welcomeMessage() {
 function askMagicApi() {
     callback = function () {
         $.ajax({
-            url : 'http://228b22d5.ngrok.io/',
+            url : 'http://56640241.ngrok.io/',
             type : 'GET',
             data : 'text=' + getText(),
             success : function(parsed_json, statut){
@@ -150,7 +150,7 @@ function askMagicApi() {
                     informations.loc = parsed_json.LOCATION;
                 }
                 //giveInformationFeedback();
-                insertBotMessage({text: "I've found that your dammage goes in the category <b>" + informations.damage + "</b>", callback: function () {
+                insertBotMessage({text: "I've found that your damage goes in the category <b>" + informations.damage + "</b>", callback: function () {
                     insertBotMessage({text:"Is it right?", callback: function () {
 
                             tmpcallback1 = function () {
