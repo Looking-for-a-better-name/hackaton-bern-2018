@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chat Bot UI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="chat">
+			<div class="chat-title">
+				<h1>Gooby</h1>
+				<h2>Bot</h2>
+			</div>
+			<div class="messages">
+				<div class="messages-content">
+				</div>
+			</div>
+			<div class="message-box">
+				<input type="text" class="message-input" placeholder="Type message..."/>
+				<button type="submit" class="message-submit">Send</button>
+				<ul id="multiple-choice" style="display: none">
+				</ul>
+			</div>
+		</div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
