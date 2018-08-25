@@ -9,7 +9,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export class NewDamageComponent implements OnInit {
   @Input()
-  url: string = "http://127.0.0.1:4000/";
+  url: string = "http://127.0.0.1:8080/";
   urlSafe: SafeResourceUrl;
 
   constructor(public sanitizer: DomSanitizer) { }
