@@ -43,6 +43,10 @@ import {HttpClientModule} from "@angular/common/http";
 import { DamageTileComponent } from './tiles/damage/damage-tile.component';
 import {DamageHistoryTileComponent} from "./tiles/damageHistory/damage-history-tile.component";
 import {ProfileTileComponent} from "./tiles/profile/profile-tile.component";
+import { AppRoutingModule } from './/app-routing.module';
+import { NewDamageComponent } from './new-damage/new-damage.component';
+import {RouterModule} from "@angular/router";
+import {TilesComponent} from "./tiles/tiles.component";
 
 @NgModule({
   exports: [
@@ -78,7 +82,9 @@ import {ProfileTileComponent} from "./tiles/profile/profile-tile.component";
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-  ]
+  ],
+  imports: [AppRoutingModule],
+  declarations: [NewDamageComponent]
 })
 export class MaterialModule {}
 
@@ -87,7 +93,8 @@ export class MaterialModule {}
     AppComponent,
     DamageTileComponent,
     DamageHistoryTileComponent,
-    ProfileTileComponent
+    ProfileTileComponent,
+    TilesComponent
   ],
   imports: [
     BrowserModule,
@@ -97,6 +104,7 @@ export class MaterialModule {}
     MaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
