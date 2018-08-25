@@ -5,11 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './damage-tile.component.html',
   styleUrls: ['../tile.component.css']
 })
-export class DamageTileComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class DamageTileComponent {
 }

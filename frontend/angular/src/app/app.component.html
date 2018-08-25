@@ -1,3 +1,4 @@
+
 <!--The content below is only a placeholder and can be replaced.-->
 <button mat-button [matMenuTriggerFor]="tipps">Tipps für Eigentümer</button>
 <button mat-button [matMenuTriggerFor]="versicherungen">Versicherungen</button>
@@ -6,8 +7,4 @@
 <button mat-button [matMenuTriggerFor]="about">Über uns</button>
 <button mat-button [matMenuTriggerFor]="engangement">Engagement</button>
 
-<div class="tiles">
-<damage-tile></damage-tile>
-<damage-history-tile></damage-history-tile>
-<profile-tile></profile-tile>
-</div>
+<router-outlet></router-outlet>
