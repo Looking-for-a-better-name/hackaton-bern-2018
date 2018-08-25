@@ -1,89 +1,120 @@
+// 0: electrical (an electrician required)
+// 1: water (plumber required) or the carpenter
+// 2: vandalism (police required)
+// 3: other/ anders (no idea.. Guub guy required to asses the damage)
+// cat 4 is pets control... minor
 module.exports = [
+  { dmg: 'my house was inundated', desc: 'water came into my house', cat: 1}, // extra added by Alec,
   {
     dmg: 'Electricity Breaks Elektra Fraubrunnen',
     desc: 'The electrician replaced the dimmers with switches and installed the dimmers after rectifying the fault on the electronic network. '
+    cat: 0,
   },
   {
     dmg: 'Graffiti`s on flower trough at the parking lot.',
     desc: 'We have obtained an offer for removal and will file a complaint with the police.'
+    cat: 2,
   },
   {
     dmg: 'thunderstorm in the afternoon has damaged sun blind',
-    desc: ''
+    desc: '',
+    cat: 0,
   },
   {
     dmg: 'An electrical short on the pinball box has led to a smoldering fire. The fire department, alarmed by the smoke alarm, was on-site and was able to extinguish the fire before it could spread to other equipment. However, four doors were broken. ',
-    desc: 'Repairing the broken doors'
+    desc: 'Repairing the broken doors',
+    cat: 0,
   },
   {
     dmg: 'Brown spots at the business premises Pink Elefant GmbH. At the tenant above, the old screw connections were loose during the kitchen drain - hence water leakage. ',
-    desc: 'order plumbing'
+    desc: 'order plumbing',
+    cat: 1
   },
   {
     dmg: 'Bullet hole in window 5th floor west side room 3502, police report available.',
-    desc: 'The disc has already been replaced. '
+    desc: 'The disc has already been replaced. ',
+    cat: 3,
   },
   {
     dmg: 'unknown, we suspect as the cause of one of the winter storms 2017/18 (date if is an estimate)',
     desc: 'the corner gable made of metal is bent and no longer completely covers the roof'
+    cat: 3,
   },
   {
-    dmg: 'Sturmbö damaged articulated arm sun blinds',
-    desc: 'Offer Schenker Storen requested'
+    dmg: 'Storm gust damaged articulated arm sun blinds',
+    desc: 'Offer from Schenker Storen requested',
+    cat: 3,
   },
   {
     dmg: 'Sun blind has broken and fallen down',
-    desc: ''
+    desc: '',
+    cat: 3,
   },
   {
     dmg: 'retaining wall invaded',
-    desc: 'Offer created Läderach Weibel AG Please visit on the spot'
+    desc: 'Offer created Läderach Weibel AG Please visit on the spot',
+    cat: 3,
   },
   {
     dmg: 'water damage during curing phase of the feed table coating by thunderstorms',
-    desc: 'According to the supplement'
+    desc: 'According to the supplement',
+    cat: 1
   },
   {
     dmg: 'water entry from outside into laundry room',
     desc: 'Search for cause and put a lock against the water Unfortunately, I could not enter water damage on the pad. The search for the cause of the damage is in progress. '
+    cat: 1,
   },
   {
     dmg: 'Following the heavy rain end of January 2018, water entered the building.',
-    desc: ''
+    desc: '',
+    cat: 1,
   },
   {
     dmg: 'In 2017, all electric cables were replaced. We suspect that the inserted pipes were moved. ',
-    desc: 'Sanitary repaired the problem after fixing the damage (25.7.2018). '
+    desc: 'Sanitary repaired the problem after fixing the damage (25.7.2018). ',
+    cat: 0,
   },
-  { dmg: 'hail damage', desc: '' },
+  {
+    dmg: 'hail damage',
+    desc: '',
+    cat: 1
+  },
   {
     dmg: 'In the storm, slat blind was damaged',
-    desc: 'The company Griesser will make a recording of the damage on 22.08.2018'
+    desc: 'The company Griesser will make a recording of the damage on 22.08.2018',
+    cat: 1
   },
   {
     dmg: 'pumping out / drying.',
     desc: '- Drainage / drying by plumbing - Order to repair / replace the ventilation system 13 June 2018 & 03 July 2018 (both times excessive rainfall) - Report by the refrigeration company on repair or replacement of the cooling system is awaited. - Invoice plumbing for draining, drying is available '
+    cat:1,
   },
   {
     dmg: 'Graffiti by strangers.',
-    desc: 'The painter has already been summoned to remove the graffiti.'
+    desc: 'The painter has already been summoned to remove the graffiti.',
+    cat: 2,
   },
   {
     dmg: 'Graffiti by strangers.',
-    desc: 'The painter has already been commissioned to remove it.'
+    desc: 'The painter has already been commissioned to remove it.',
+    cat: 2,
   },
   {
     dmg: 'thunderstorm',
     desc: 'above mentioned carpet on balcony broken plastering works by owner to absorb water by owner'
+    cat: 2,
   },
-  { dmg: 'Lightning strike', desc: '' },
+  { dmg: 'Lightning strike', desc: '' , cat: 0},
   {
     dmg: 'ant infestation',
     desc: 'The exact date of the event is not known to us, as we do not know when the ants were in the column.'
+    cat: 4,
   },
   {
     dmg: 'Due to a strong storm, we had a water entry into the basement premises, because the sewer manhole could not remove the amount of water.',
     desc: 'The water was wiped away by a rental party, also a drying device was set up by the company Zigerlig Bautrocknung AG. The water was wiped away by a rental party. The cellar premises had to be dried out. Also, two doors (only door leaves) had to be replaced by the carpenter, since these are swollen by the water.'
+    cat: 1,
   },
   { dmg: 'storm with hail', desc: '' },
   {
