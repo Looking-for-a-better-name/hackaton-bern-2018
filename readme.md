@@ -17,11 +17,45 @@ B) Du erarbeitest einen gesamtheitlichen Lösungsansatz für die automatisierte 
 The goal of our project is to automate as much as possible the declaration of damage of the GVB. To do this we have set up an interactive chat that works with the AI to analyze entered sentences and image recognition to see the type of incident and the severity. Depending on the different possible cases, solutions are proposed to the user. The goal was to unload the GVB employees as much as possible. Our solution allows to automatically process 75% of the declarations at this day.
 ## Sources
 - Angular (https://angular.io/)
-- Custom neural network build by Lukasz
+- Custom neural network build by Lukasz: 
+    - doc2vec, POS tagger, 20x20x4 NeuralNet, BayesClassifier, Maxiumum Entropy Classifier, RF for ensable, 
+    - frameworks: keras (with tf backend), natural
 - Chat boilerplate (https://github.com/vigzmv/ChatUI)
 - Bug lib (https://github.com/Auz/Bug)
 ## Team `Looking for a better name`
 - Nicole Widmer
 - Andreas kocher
+- Lukasz Gintowt
+- Alec von Barnekow
+
+-- en
+
+# Looking for a better damage report assistant
+## Challenge
+### Intro
+Imagine that you work in the claims department of Bern's building insurance (GVB). At the weekend, a violent storm like Burglind sweeps across Switzerland. You come to the office on Monday morning and there is a state of emergency. Your mailbox contains more than 3,000 claims from impatient homeowners who want to know as soon as possible, whether their damage is covered and how it goes on.
+Accept this challenge and develop a solution that can automatically assess GVB's claims reports and process them until they are disbursed. In addition, the software should be able to learn from the processed messages.
+### Context
+GVB wants to take advantage of the opportunities of digital transformation and make the GVB Group fit for the future. One of the most important initiatives is the digitalisation of claims management. GVB pursues two goals: On the one hand, the customer experience is to be optimized by significantly reducing the coordination effort, in particular. On the other hand, the internal process should be handled with the greatest possible degree of automation.
+### Solution
+For the development of the solution you have 2 options:
+
+A) You develop an adaptive software for the automated assessment of the damage based on the damage reports. Primary goal: maximum efficiency
+
+or
+
+B) You will develop a holistic approach to the automated end-to-end processing of the damage - from registration to payment of the amount. Primary goal: maximum customer experience
+## Our project
+The goal of our project is to automate as much as possible the declaration of damage of the GVB. To recognize the type of incident and the severity. Depending on the different possible cases, solutions are proposed to the user. The goal was to unload the GVB employees as much as possible. 75% of the declarations at this day.
+## sources
+- Angular (https://angular.io/)
+- Custom neural network build by Lukasz
+    - doc2vec, POS tagger, 20x20x4 NeuralNet, BayesClassifier, Maxiumum Entropy Classifier, RF for ensable, 
+    - frameworks: keras (with tf backend), natural
+- Chat boilerplate (https://github.com/vigzmv/ChatUI)
+- Bug lib (https://github.com/Auz/Bug)
+## Team `Looking for a better name`
+- Nicole Widmer
+- Andreas Kocher
 - Lukasz Gintowt
 - Alec von Barnekow
