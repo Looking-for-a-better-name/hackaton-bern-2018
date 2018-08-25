@@ -10,6 +10,7 @@ export class NewDamageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    loadChatBot();
+    console.log("i am here");
   }
-
 }
