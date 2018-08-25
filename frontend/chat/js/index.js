@@ -9,7 +9,8 @@ var informations = {
     damage: null,
     name: null,
     time: null,
-    cause: null
+    cause: null,
+    loc: null
 };
 
 callback = null;
@@ -145,24 +146,29 @@ function askMagicApi() {
                 if (parsed_json.DAMAGE) {
                     informations.damage = parsed_json.DAMAGE;
                 }
+                if (parsed_json.LOCATION) {
+                    informations.loc = parsed_json.LOCATION;
+                }
                 //giveInformationFeedback();
                 insertBotMessage({text: "I've found that your dammage goes in the category <b>" + informations.damage + "</b>", callback: function () {
                     insertBotMessage({text:"Is it right?", callback: function () {
 
                             tmpcallback1 = function () {
-                                console.log(getText());
                                 if (lastValue == "Yes") {
                                     insertBotMessage({text:"Perfect, let's continue...", callback: function () {
-                                            categorySelector(informations.damage);
+                                            if (informations.loc != null) {
+                                                checkForMissingData()
+                                            } else {
+                                                categorySelector(informations.damage);
+                                            }
                                         }
                                     })
                                 } else {
                                     insertBotMessage({text:"I'm sorry, please choose", callback: function () {
                                             tmpcallback2 = function () {
-                                                console.log(lastValue);
                                                 switch (lastValue) {
-                                                    case 'electricial':
-                                                        informations.damage = "electricial";
+                                                    case 'electrical':
+                                                        informations.damage = "electrical";
                                                         break;
                                                     case 'water':
                                                         informations.damage = "water";
@@ -175,7 +181,11 @@ function askMagicApi() {
                                                         break;
                                                     default:
                                                 }
-                                                categorySelector(informations.damage);
+                                                if (informations.loc != null) {
+                                                    checkForMissingData()
+                                                } else {
+                                                    categorySelector(informations.damage);
+                                                }
                                             };
                                             askMultipleChoice(["electrical", "water", "vandalism", "other"], tmpcallback2);
                                         }
@@ -201,9 +211,13 @@ function showLink(text) {
 }
 
 function categorySelector(category) {
+    var loc = "Bern";
+    if (informations.loc != null) {
+        loc = informations.loc;
+    }
     switch (category) {
         case 'electrical':
-            insertBotMessage({text: "I'm sorry to hear about that... Maybe one of our electrician near Bern can help you", callback: function () {
+            insertBotMessage({text: "I'm sorry to hear about that... Maybe one of our electrician near " + loc + " can help you", callback: function () {
                     showLink("Elektro Burkhalter AG<br/><a href='tel:0000000000'>031 996 33 33</a><br/><hr/>Aerni Elektro<br/><a href='tel:0000000000'>031 371 30 31</a><br/><hr/>Elektro Hardy Walther AG<br/><a href='tel:0000000000'>031 381 33 55</a>");
                 }
             });
@@ -218,7 +232,7 @@ function categorySelector(category) {
                 }})
             break;
         case 'vandalism':
-            insertBotMessage({text: "I'm sorry to hear about that... Maybe one of our painter near Bern can help you", callback: function () {
+            insertBotMessage({text: "I'm sorry to hear about that... Maybe one of our painter near " + loc + " can help you", callback: function () {
                     showLink("You should think about to <a href='tel:000'>call the police...</a>")
                     showLink("Tekari AG<br/><a href='tel:0000000000'>031 992 55 83</a><br/><hr/>Aebi Malerei Bodenbeläge Reinigung Bern AG<br/><a href='tel:0000000000'>031 941 21 71</a><br/><hr/>Gebr. Martino AG<br/><a href='tel:0000000000'>031 747 89 40</a>");
                 }
@@ -231,7 +245,7 @@ function categorySelector(category) {
             });
             break;
         case '4':
-            insertBotMessage({text: "I'm sorry to hear about that... Maybe one of our exterminator near Bern can help you", callback: function () {
+            insertBotMessage({text: "I'm sorry to hear about that... Maybe one of our exterminator near " + loc + " can help you", callback: function () {
                     showLink("Desinfecta AG Bern<br/><a href='tel:0000000000'>031 333 20 30</a><br/><hr/>Alder Ungeziefer- u. Schädlingsbekämpfung<br/><a href='tel:0000000000'>031 381 09 55</a><br/>");
                 }
             });
@@ -269,23 +283,23 @@ function giveInformationFeedback() {
 }
 
 function checkForMissingData() {
-    if (!informations.name) {
+    /*if (!informations.name) {
         insertBotMessage({text: "Who is involved?", callback: function () {
             askFor(null);
             askMagicApi();
             }
         });
         return;
-    }
-    if (!informations.damage) {
+    }*/
+    /*if (!informations.damage) {
             insertBotMessage({text: "Can you say me what happened?", callback: function () {
                     askFor(null);
                     askMagicApi();
                 }
             });
         return;
-    }
-    if (!informations.date) {
+    }*/
+    /*if (!informations.date) {
         insertBotMessage({text: "Can you say me when this happened?"});
         askFor('date');
         callback = function () {
@@ -294,23 +308,30 @@ function checkForMissingData() {
             checkForMissingData();
         };
         return;
-    }
+    }*/
     if (!informations.object) {
-        insertBotMessage({text: "Can you tell me on which property this damage happened?", callback: function() {
-                askFor('object');
+        insertBotMessage({text: "Oww snap... it seems that you have two property in " + informations.loc + ". Can you say me which one it is?", callback: function() {
+                askMultipleChoice(["master villa in the center of " + informations.loc, "Small apartment in the " + informations.loc + " countryside"], function () {
+                    informations.object = getText();
+                    insertMessage();
+                    insertBotMessage({text: "Analysing your damage...", callback: function () {
+                            categorySelector(informations.damage);
+                        }
+                    });
+                });
             }
         });
-        callback = function () {
+        /*callback = function () {
             informations.object = getText();
             insertMessage();
             checkForMissingData();
-        };
+        };*/
         return;
     }
-    insertBotMessage({text: "So Jeff,", callback: function () {
+    /*insertBotMessage({text: "So Jeff,", callback: function () {
         insertBotMessage({text: "I have all the required informations! Let's continue..."})
         }
-    });
+    });*/
 }
 
 function getText() {
@@ -334,7 +355,7 @@ function askFor(what) {
             });
             break;
         case 'object':
-            askMultipleChoice(["master villa in the center of Berne", "Small apartment in the Jura-Bernese countryside"], null);
+            askMultipleChoice(["master villa in the center of " + informations.loc, "Small apartment in the " + informations.loc + " countryside"], null);
             break;
         case 'damage':
             break;
@@ -393,11 +414,11 @@ function askMultipleChoice(choices, func) {
     choices.forEach(function(choice) {
         $("#multiple-choice").append("<li>" + choice + "</li>");
     });
+    updateScrollbar()
     var test = callback;
     $("#multiple-choice li").click(function(e) {
         // hate javascript sometimes
         callback = test;
-        console.log(this.innerHTML);
         $(".message-input").val(this.innerHTML);
         $("#multiple-choice").hide();
         $(".message-input").show();
