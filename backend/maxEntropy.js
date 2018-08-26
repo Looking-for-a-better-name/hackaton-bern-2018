@@ -91,7 +91,7 @@ console.warn('sriously?, this blows')
 //
 // var newClassifier = null;
 // it("Load classifer", function(done) {
-//   classifier.load(classifierFilename, SE_Element, function(err, c) {
+//   classifier.load(classifierFilename, SE_Element, fupwdnction(err, c) {
 //     if (err) {
 //       console.log(err);
 //     }

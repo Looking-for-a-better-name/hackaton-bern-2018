@@ -12,6 +12,7 @@
     "brain.js": "^1.2.6",
     "execa": "^0.11.0",
     "mr-t": "^1.1.0",
-    "natural": "^0.6.1"
+    "natural": "^0.6.1",
+    "object-stream-tools": "^2.3.0"
   }
 }
