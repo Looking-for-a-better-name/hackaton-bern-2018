@@ -1,8 +1,8 @@
 // 0: electrical (an electrician required)
 // 1: water (plumber required) or the carpenter
 // 2: vandalism (police required)
-// 3: other/ anders (no idea.. Guub guy required to asses the damage)
-// cat 4 is pets control... minor
+// 3: other / anders (no idea.. Guub guy required to asses the damage)
+// 4: pests control... minor
 module.exports = [
   { dmg: 'my house was inundated', desc: 'water came into my house', cat: 1 }, // extra added by Alec,
   {
@@ -490,6 +490,10 @@ module.exports = [
     dmg: 'Large wasp nest found at Sonnenstore. Cost of removal (removed by fire department) and damage to the sun blind (large hole) ',
     desc: 'removal of wasp nest (fire brigade)',
     cat: 4
+  },
+  { // extra
+    dmg: 'We found rats nets, so we called the exterminator to remove rodents',
+    desc: 'Removed rats nest',
+    cat: 3
   }
-
 ]

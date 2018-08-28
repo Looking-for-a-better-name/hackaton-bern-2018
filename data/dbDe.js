@@ -1,11 +1,17 @@
-[
+// 0: electrical (an electrician required)
+// 1: water (plumber required) or the carpenter
+// 2: vandalism (police required)
+// 3: other/ anders (no idea.. Guub guy required to asses the damage)
+// 4: pests control... minor
+module.exports = [
   {
     "date": "29.07.2018",
     "measure": "Der Elektriker hat die Dimmer durch Schalter ersetzt und nach Behebung der Störung am Elektronetz die Dimmer wieder eingebaut.",
     "damage": "Stromunterbruch der Elektra Fraubrunnen",
     "damagedPart": "Beleuchtungssteuerung im Restaurant Linde.",
     "description": "Der Elektriker hat die Dimmer durch Schalter ersetzt und nach Behebung der Störung am Elektronetz die Dimmer wieder eingebaut. ",
-    "cost": "400.00"
+    "cost": "400.00",
+    cat: 0,
   },
   {
     "date": "1.2.2018",
@@ -13,7 +19,8 @@
     "damage": "Graffitis an Blumentrog beim Parkplatz.",
     "damagedPart": "",
     "description": " Wir haben eine Offerte für die Entfernung eingeholt und werden bei der Polizei eine Anzeige einreichen.",
-    "cost": ""
+    "cost": "",
+    cat: 0,
   },
   {
     "date": "25.07.2018",
@@ -21,7 +28,8 @@
     "damage": "Gewitter am Nachmittag hat Sonnenstore beschädigt",
     "damagedPart": "Riss in Sonnenstorenstoff",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 0
   },
   {
     "date": "25.07.2018",
@@ -29,7 +37,8 @@
     "damage": "Ein Elektrokurzschluss am Flipperkasten hat zu einem Schwelbrand geführt. Die Feuerwehr, alarmiert durch den Rauchmelder, war vor Ort und konnte das Feuer löschen, bevor es auf andere Mobilien übergreifen konnte. Jedoch wurden vier Türen aufgebrochen.",
     "damagedPart": "4 Türen, davon eine Eingangstüre",
     "description": "Reparatur der defekten Türen ",
-    "cost": "noch nicht bekannt"
+    "cost": "noch nicht bekannt",
+    cat: 0,
   },
   {
     "date": "23.07.2018",
@@ -37,7 +46,8 @@
     "damage": "Braune Flecken bei dem Gewerberaum Pink Elefant GmbH. Beim Mieter oberhalb waren beim Küchenablauf die alten Verschraubungen lose - daher Wasseraustritt.",
     "damagedPart": "Decke / Verschraubung Sifon",
     "description": "Auftrag Sanitär ",
-    "cost": ""
+    "cost": "",
+    cat: 0,
   },
   {
     "date": "21.05.2018",
@@ -45,7 +55,8 @@
     "damage": "Einschussloch im Fenster 5. OG Seite West Zimmer 3502, Polizeirapport vorhanden.",
     "damagedPart": "Fenster",
     "description": "Die Scheibe wurde bereits ersetzt. ",
-    "cost": "2386.05"
+    "cost": "2386.05",
+    cat: 3,
   },
   {
     "date": "03.01.2018",
@@ -53,7 +64,8 @@
     "damage": "unbekannt, wir vermuten als Ursache einer der Winterstürme 2017/18 (Datum ob ist eine Schätzung)",
     "damagedPart": "Dachgiebel",
     "description": " der Eckgiebel aus Metall ist verbogen und bedeckt das Dach nicht mehr vollständig",
-    "cost": ""
+    "cost": "",
+    cat: 3,
   },
   {
     "date": "25.07.2018",
@@ -61,7 +73,8 @@
     "damage": "Sturmbö beschädigte Knickarm Sonnenstore",
     "damagedPart": "Knickarm Sonnenstore",
     "description": " Offerte Schenker Storen angefordert",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "20.07.2018",
@@ -69,7 +82,8 @@
     "damage": "Sonnenstore ist gebrochen und runtergefallen",
     "damagedPart": "Wintergartenfenster",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "19.06.2018",
@@ -77,7 +91,8 @@
     "damage": "Stützmauer eingefallen",
     "damagedPart": "tragende Mauerelemente für Eingangstore",
     "description": " Offerte erstellt Läderach Weibel AG Bitte vor Ort besichtigen",
-    "cost": "7500.00"
+    "cost": "7500.00",
+    cat: 3
   },
   {
     "date": "20.07.2018",
@@ -85,7 +100,8 @@
     "damage": "Wasserschaden während Aushärtungsphase der Futtertischbeschichtung durch Gewitter",
     "damagedPart": "Boden",
     "description": " Gemäss Beilage",
-    "cost": "4865.90"
+    "cost": "4865.90",
+    cat: 1
   },
   {
     "date": "20.7.2018",
@@ -93,15 +109,17 @@
     "damage": "Wassereintritt von aussen in Waschküche",
     "damagedPart": "Türe mit Rahmen, Boden",
     "description": "Suche nach Ursache und legen einer Sperre gegen das Wasser Leider konnte ich auf dem Pad Wasserschaden nicht eingeben. Die Suche nach der Schadenursache ist im Gang.",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "23.01.2018",
     "measure": "",
-    "damage": "Suite au forte pluie de fin janvier 2018, de l\\'eau s\\'est introduit dans le bâtiment.",
-    "damagedPart": "mesures d\\'assèchements, petite menuiserie (meubles de cuisine).",
+    "damage": "Suite au forte pluie de fin janvier 2018, de l'eau s'est introduit dans le bâtiment.",
+    "damagedPart": "mesures d'assèchements, petite menuiserie (meubles de cuisine).",
     "description": " ",
-    "cost": "1500.--"
+    "cost": "1500.--",
+    cat: 1
   },
   {
     "date": "25.7.2017",
@@ -109,7 +127,8 @@
     "damage": "Im Jahr 2017 wurden alle Elektroleitungen ausgewechselt. Wir vermuten, dass dabei die gesteckten Rohre verschoben wurden.",
     "damagedPart": "Holzseitenwände und Holztüre ders Küchenmöbels",
     "description": "Sanitär hat nach dem Feststellen des Schadens (25.7.2018) das Problem behoben. ",
-    "cost": ""
+    "cost": "",
+    cat: 0
   },
   {
     "date": "21.06.2018",
@@ -117,7 +136,8 @@
     "damage": "Hagelschaden",
     "damagedPart": "drei Storen",
     "description": " ",
-    "cost": "2042"
+    "cost": "2042",
+    cat: 3
   },
   {
     "date": "03.07.2018",
@@ -125,7 +145,8 @@
     "damage": "Beim Unwetter wurde Lamellenstore beschädigt",
     "damagedPart": "",
     "description": " Die Firma Griesser wird am 22.08.2018 eine Aufnahme der Schäden machen",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "13.06.2018",
@@ -133,7 +154,8 @@
     "damage": "Auspumpen/Trocknen.",
     "damagedPart": "",
     "description": "- Auspumpen/Trocknen durch Sanitär - Auftrag zur Reparatur/Ersatz des Ventilationssystems 13. Juni 2018 & 03. Juli 2018 (beide Male übermässiger Niederschlag) - Bericht der Kältetechnikfirma betreffend Reparatur oder Ersatz des Kühlsystems wird abgewartet. - Rechnung Sanitär für Auspumpen, Trocknen ist vorhanden",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "23.7.2018",
@@ -141,7 +163,8 @@
     "damage": "Graffiti durch Unbekannte.",
     "damagedPart": "",
     "description": " Der Maler wurde für die Entfernung des Graffitis bereits aufgeboten.",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "23.7.2018",
@@ -149,7 +172,8 @@
     "damage": "Graffiti durch Unbekannte.",
     "damagedPart": "",
     "description": " Der Maler wurde bereits den Auftrag für die Entfernung erteilt.",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "20.07.2018",
@@ -157,7 +181,8 @@
     "damage": "Gewitter",
     "damagedPart": "Balkonboden",
     "description": "oben erwähnt Rasenteppich auf Balkon kaputt Putzarbeiten durch Eigentümer Wasser aufsaugen durch Eigentümer",
-    "cost": "600.-"
+    "cost": "600.-",
+    cat: 2
   },
   {
     "date": "10.7.2018",
@@ -165,7 +190,8 @@
     "damage": "Hornissennest",
     "damagedPart": "keine",
     "description": "Entfernung des Hornissennests keine",
-    "cost": "CHF 200.00"
+    "cost": "CHF 200.00",
+    cat: 4
   },
   {
     "date": "25.7.2018",
@@ -173,7 +199,8 @@
     "damage": "Blitzschlag",
     "damagedPart": "",
     "description": " ",
-    "cost": "ca. 600.-"
+    "cost": "ca. 600.-",
+    cat: 0
   },
   {
     "date": "01.01.2018",
@@ -181,7 +208,8 @@
     "damage": "Ameisenbefall",
     "damagedPart": "die Stütze des Hauses",
     "description": " Das genaue Datum des Ereignisses ist uns nicht bekannt, da wir nicht wissen, ab wann die Ameisen in der Stütze waren.",
-    "cost": ""
+    "cost": "",
+    cat: 4
   },
   {
     "date": "15.07.2018",
@@ -189,7 +217,8 @@
     "damage": "Durch ein starkes Unwetter hatten wir einen Wassereintritt in die Kellerräumlichkeiten, da der Abwasserschacht die Menge von Wasser nicht abtransportieren konnte.",
     "damagedPart": "Keller, Kellertüren",
     "description": "Das Wasser wurde durch eine Mietpartei weggewischt, ebenfalls wurde ein Trocknungsgerät durch die Firma Zigerlig Bautrocknung AG aufgestellt. Das Wasser wurde durch eine Mietpartei weggewischt. Die Kellerräumlichkeiten mussten ausgetrocknet werden. Ebenfalls mussten zwei Türen (nur Türblätter) durch den Schreiner ersetzt werden, da diese durch das Wasser aufgequollen sind.",
-    "cost": "3000.00"
+    "cost": "3000.00",
+    cat: 1
   },
   {
     "date": "20.7.2018",
@@ -197,7 +226,8 @@
     "damage": "Gewitter mit Hagel",
     "damagedPart": "Storen und Fassade",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "03.01.2018",
@@ -205,7 +235,8 @@
     "damage": "Firstziegel wurde durch starke Böen (Sturmwind Burglind) auf das Dach geworfen",
     "damagedPart": "Firstziegel und 5 Biberschwanzziegel",
     "description": " ",
-    "cost": "386.35"
+    "cost": "386.35",
+    cat: 3
   },
   {
     "date": "2.8.18",
@@ -213,7 +244,8 @@
     "damage": "Nach den Ferien stellt frau Kräuchi fest dass von einer Wand Wasser in den Laden Gelaufen ist und dass es im Laden übel riecht.",
     "damagedPart": "Wand, Holzverkleidung,Parkett",
     "description": "Runternehmen der Holzverkleidung ",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "20.7.2018",
@@ -221,7 +253,8 @@
     "damage": "hagel",
     "damagedPart": "Fassade",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3,
   },
   {
     "date": "01.08.2018",
@@ -229,15 +262,18 @@
     "damage": "starkes Unwetter mit Hagel am späten Nachmittag des 1. August",
     "damagedPart": "Solaranlage für Warmwasseraufbereitung auf Bauernhaus. 1. Panel zersplittert",
     "description": "Splitter in Rasenfläche entfernt Der Sanitärinstallateur war heute 3. August vor Ort und klärt ab, wie und was genau repariert bzw. ersetzt werden muss.",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
+
   {
     "date": "06.04.2018",
     "measure": "",
     "damage": "Leider flog ein Ball beim spielen unsrer Kindern an die Haustüre und beschädigte das Türglas.",
     "damagedPart": "Glaselement Haustüre",
     "description": " ",
-    "cost": "446"
+    "cost": "446",
+    cat: 2
   },
   {
     "date": "06.06.2018",
@@ -245,7 +281,8 @@
     "damage": "In der Wohnküche ist aus der Wasserleitung der Spülmaschine Wasser ausgetreten und auf den Parkett gelaufen. Das Wasser stand dort über Nacht, so dass der Parkett auf einem Bereich -etwa in der Grösse DIN-A2- Schaden genommen hat. Er ist geschrumpft und es sind Risse entstanden, die sich trotz Pflegemassnahmen wie Ölen nicht mehr schliessen.",
     "damagedPart": "Parkett",
     "description": "Wasser aktiv getrocknet, Dabei sind keine relevanten Kosten angefallen. 079-7870098.",
-    "cost": "800 Franken."
+    "cost": "800 Franken.",
+    cat: 1
   },
   {
     "date": "01.08.18",
@@ -253,7 +290,8 @@
     "damage": "Durch UT wurde ein Chrischichracher in den Briefkasten gelegt und gezündet. Briefkasten defekt.",
     "damagedPart": "Briefkasten",
     "description": " ",
-    "cost": "vermutlich ca. 300 - 500.-- (mit Montagekosten)"
+    "cost": "vermutlich ca. 300 - 500.-- (mit Montagekosten)",
+    cat: 2,
   },
   {
     "date": "23.06.2018",
@@ -261,7 +299,8 @@
     "damage": "Der Knetkacken ist mir beim Abtrocknen runter auf die Glaskeramikplatte gefallen.",
     "damagedPart": "",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "13.07.2018",
@@ -269,7 +308,8 @@
     "damage": "Wasser im Keller aufgrund eines Rückstaus der Kanalisation. Der Sanitärinstallateur hat vermutet, dass in der Umgebung eine Kanalreinigung stattgefunden hat.",
     "damagedPart": "Keine Reparaturen. Aufsaugen und Reinigen des Kellerbodens.",
     "description": "Piketteinsatz Müller Haustechnik ",
-    "cost": "CHF 193.85"
+    "cost": "CHF 193.85",
+    cat: 1,
   },
   {
     "date": "31.07.2018",
@@ -277,7 +317,8 @@
     "damage": "Unterspülung durch starke Gewitter",
     "damagedPart": "Neben dem Eingang zum Teile und Zubehör ist der Belag weggebrochen.",
     "description": "Firma Friedli-Caprani wird sofort aufgeboten. Es war im eigentlich Sinn kein Erdrutsch.",
-    "cost": "unbekannt"
+    "cost": "unbekannt",
+    cat: 1,
   },
   {
     "date": "31.7.2018",
@@ -285,7 +326,8 @@
     "damage": "Bei der Wohnungsabnahme wurde festgestellt, dass rund um das WC ein Fleck ist. Messungen der Firma Zigerlig haben ergeben, dass es sich um Feuchtigkeit handelt.",
     "damagedPart": "Boden Badezimmer, ev. darunterliegende Wohnung",
     "description": "Zigerlig AG, Feuchtigkeitsmessung Bill + Künzi AG, WC Demontieren, Schadenursache suchen und beheben Der Sanitär wird nun das WC sofort demontieren und die Schadenursache eruieren.",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "01.08.2018",
@@ -293,7 +335,8 @@
     "damage": "Am 1. August ging über Säriswil ein Hagelgewitter mit starken Sturmböhen nieder. Unsere Sonnenstore war während unserer Abwesenheit draussen. Eigentlich hätte diese auf Grund von Sensoren automatisch einfahren sollen. Als wir jedoch während des Sturms nachhause kamen war die Store bereits eingestürzt. Es hatte sich ein grosser Wassersack gebildet und die Querstrebe war ausgerissen. Dadurch wurde die gesamte Konstruktion beschädigt.",
     "damagedPart": "Sonnenstore / Beschattungsanlage",
     "description": "Das Wasser wurde abgelassen und die Store so gut wie im beschädigten Zustand möglich eingefahren um weitere Schäden zu vermeiden. Ausserdem wurde der Sonnensensor augeschaltet um ein erneutes Ausfahren der beschädigten Store zu vermeiden. Heute am 3. August 2018 kommt ein Techniker der Lieferfirma vorbei und wird den Schaden begutachten und den Aufwand und die Kosten abschätzen.",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "24.07.2018",
@@ -301,15 +344,18 @@
     "damage": "Belästigung durch Insekten",
     "damagedPart": "",
     "description": "Schädlingsbekämpfungsfirma bestellt ",
-    "cost": "187.40"
+    "cost": "187.40",
+    cat: 4
   },
+
   {
     "date": "29.07.2018",
     "measure": "",
     "damage": "Unbekannte haben die Fassade versprayt.",
     "damagedPart": "Fassade",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "2.6.2018",
@@ -317,7 +363,8 @@
     "damage": "Dieser Fall wurde bereits unter Schadennummer 2342797-A / 2342797-B gemeldet. Siehe entsprechende Korrespondenz von Ihrer Seite (dd 7.6.2018). Im Anschluss an die Reparatur des gebrochenen Gelenkarmes hat sich herausgestellt, dass der Motor ebenfalls kaputt gegangen ist. Deshalb musste dieser nun auch ersetzt werden. Entsprechend Ihrem Schreiben vom 7.6.2018 melde ich diesen Schaden hiermit nach.",
     "damagedPart": "",
     "description": " ",
-    "cost": "1428.90"
+    "cost": "1428.90",
+    cat: 3
   },
   {
     "date": "31.07.2018",
@@ -325,7 +372,8 @@
     "damage": "Habe am 31. Juli auf der Terrasse Dachisolationsfetzen gefunden. Am 2. August dann den Eingang für den Marder festgestellt.",
     "damagedPart": "Neu Saniertes Dach 2017, übergang Altbau zu Anbau, siehe Foto",
     "description": "Dachdecker Bruno Reber Bowil informiert, kommt am Montag 6. August 2018 ",
-    "cost": ""
+    "cost": "",
+    cat: 3,
   },
   {
     "date": "1.8.2018",
@@ -333,7 +381,8 @@
     "damage": "Hagel",
     "damagedPart": "keine",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "28.04.2017",
@@ -341,7 +390,8 @@
     "damage": "Bei Regen hat sich im innen liegenden Dachkänel ein Rückstau gebildet. Der Dachkänel hat sich gefüllt und das gestaute Wasser ist durch eine undichten Stelle durch das ganze Haus bis in den Keller gelaufen.",
     "damagedPart": "Keine Da ich per Zufall zu Hause war habe ich den Wassereintritt schnell entdeckt. Dank dem raschen Kommen des Dachdeckers konnte der Rückstau im Dachkänel beseitigt werden.",
     "description": "Im Sommer eine regelmässige Kontrolle der Dachkänel. Im Winter ist das zu gefährlich. Die undichte Stelle konnte bis heute nicht lokalisiert werden. Das Problem kann jederzeit wieder auftreten. Falls dann niemand zu Hause ist der den Wassereintritt rasch entdeckt kann es im Haus grosse Beschädigungen geben.",
-    "cost": "CHF 68\\'580.00 Schaden beheben + Verbesserung Dachkonstruktion"
+    "cost": "CHF 68'580.00 Schaden beheben + Verbesserung Dachkonstruktion",
+    cat: 1,
   },
   {
     "date": "20.07.2018",
@@ -349,7 +399,8 @@
     "damage": "Aufgrund der Störungsmeldung hat der Service-Techniker von der Schindler AG festgestellt, dass an einer Komponente auf Grund äussere Einflüsse eine Reparatur notwendig war (Blitzschlag)",
     "damagedPart": "",
     "description": "Störungsmeldung wurde behoben ",
-    "cost": "134.10"
+    "cost": "134.10",
+    cat: 0
   },
   {
     "date": "01.07.2018",
@@ -357,7 +408,8 @@
     "damage": "Grafitti",
     "damagedPart": "Umzäunung (gemauert)",
     "description": " ",
-    "cost": "161.55"
+    "cost": "161.55",
+    cat: 2,
   },
   {
     "date": "30.7.2018",
@@ -365,7 +417,8 @@
     "damage": "Vermutlich ist ein Feuerwerkskörper auf die Sonnenstore geflogen.",
     "damagedPart": "Sonnenstore",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "01.08.2018",
@@ -373,15 +426,18 @@
     "damage": "Wespennester unter Storen",
     "damagedPart": "keine",
     "description": " Wespennester müssten geräumt werden.",
-    "cost": ""
+    "cost": "",
+    cat: 4
   },
+
   {
     "date": "17.7.2018",
     "measure": "",
     "damage": "Versprayte Objekte auf Sporthallen-Gelände.",
     "damagedPart": "Betonmauern Vorplatz Sporthalle",
     "description": " Verweis auf Anzeige wegen Sachbeschädigung bei der Kantonspolizei Bern vom 18.7.2018",
-    "cost": "CHF 5\\'500"
+    "cost": "CHF 5'500",
+    cat: 2
   },
   {
     "date": "01.08.2018",
@@ -389,7 +445,8 @@
     "damage": "Eine Windböe hat die Sonnenstore heruntergerissen.",
     "damagedPart": "Sonnenstore.",
     "description": "Sonnenstore eigenhändig demoniert. ---",
-    "cost": "2500.--"
+    "cost": "2500.--",
+    cat: 3
   },
   {
     "date": "28.07.2018",
@@ -397,7 +454,8 @@
     "damage": "Haustüre wurde versprayt",
     "damagedPart": "Haustüre",
     "description": " ",
-    "cost": "2000"
+    "cost": "2000",
+    cat: 2
   },
   {
     "date": "29.05.2016",
@@ -405,15 +463,18 @@
     "damage": "Folgeschaden nach Hochwasser im Keller (Tielkühlschrank stand im Wasser); nun am 31.07.2018 ausgestiegen",
     "damagedPart": "Tiefkühlschrank plus gesamter Inhalt",
     "description": " ",
-    "cost": "ca. Fr. 900.--"
+    "cost": "ca. Fr. 900.--",
+    cat: 1,
   },
+
   {
     "date": "01.07.2018",
     "measure": "",
     "damage": "Undichter Bodenablauf",
     "damagedPart": "Decke von Einstellhalle",
     "description": " ",
-    "cost": "CHF 4\\'754.95"
+    "cost": "CHF 4'754.95",
+    cat: 1,
   },
   {
     "date": "28.07.2018",
@@ -421,7 +482,8 @@
     "damage": "morgens 0830 bis 0930 mehrere Blitzeinschläge in nächster Nähe (Blitz bis Knall unter 1 Sekunde)",
     "damagedPart": "",
     "description": "Elektro Etavis Beutler Funktionskontrolle Etavis Beutler Hasle-Rüegsau Apparatekontrolle am 31.Juli, mechanische Teile in Ordnung. Heute 2.8.2018 erneute Funktionsstörung. Laut Auskunft Etavis muss Steuerung ersetzt werden. Lohnt sich Reparatur noch ?",
-    "cost": "ca 600.- ? Ersatz 2200 ?"
+    "cost": "ca 600.- ? Ersatz 2200 ?",
+    cat: 0,
   },
   {
     "date": "1.8.2017",
@@ -429,7 +491,8 @@
     "damage": "Letzten August- beim Sturm, der am 1.8.2017 durch Rubigen fegte, wurde der Grill von Frau Jungi umgeworfen und hat auf ihrem Balkon einige Bodenplatten beschädigt.",
     "damagedPart": "Bodenplatten auf Balkon",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3,
   },
   {
     "date": "13.07.2018",
@@ -437,15 +500,18 @@
     "damage": "Nach starkem Gewitter wurde das Unterdach nass. Wasser drückt bei zwei Lukarnen unter die Ziegel.",
     "damagedPart": "Dach",
     "description": "Leck suchen, defekte Ziegel ausfindig machen, Kontrolle der Blechanschlüsse. Rechnung in den Beilagen. ",
-    "cost": "5605.80"
+    "cost": "5605.80",
+    cat: 1
   },
+
   {
     "date": "25.06.2018",
     "measure": "",
     "damage": "Spreyereien",
     "damagedPart": "Fassade",
     "description": " ",
-    "cost": "Fr. 1\\'447.50"
+    "cost": "Fr. 1'447.50",
+    cat: 2,
   },
   {
     "date": "18.01.2018",
@@ -453,7 +519,8 @@
     "damage": "Sturmtief Friederike beschädigte 2 Storen",
     "damagedPart": "2 Storen",
     "description": " ",
-    "cost": "1000.00"
+    "cost": "1000.00",
+    cat: 3, // blinds are common case,
   },
   {
     "date": "25.06.2018",
@@ -461,7 +528,8 @@
     "damage": "Spayereien",
     "damagedPart": "Fassade",
     "description": " ",
-    "cost": "678.00"
+    "cost": "678.00",
+    cat: 2,
   },
   {
     "date": "24.7.2018",
@@ -469,7 +537,8 @@
     "damage": "die Sonnenstoren sind bei diesen Temperaturen notwendig. Als über Nacht unvorhergesehen sich eine Regenzelle entlud tränkte diese den gesamten Stoff. Am Morgen waren die Teleskoparme gebrochen.",
     "damagedPart": "Sonnenstore",
     "description": " ",
-    "cost": "2702.20"
+    "cost": "2702.20",
+    cat: 3,
   },
   {
     "date": "01.08.2018",
@@ -477,15 +546,18 @@
     "damage": "Starke Windstösse wehten Ziegel vom Scheunendach.",
     "damagedPart": "Dach",
     "description": "Eindecken mit neuen Ziegeln. ",
-    "cost": "Fr. 500.- ca."
+    "cost": "Fr. 500.- ca.",
+    cat: 3,
   },
+
   {
     "date": "20.05.2018",
     "measure": "Demontage Sonnenstore",
     "damage": "Kurzzeitige starke Windböen haben zur Zerstörung der Sonnenstore geführt",
     "damagedPart": "",
     "description": "Demontage Sonnenstore ",
-    "cost": "2500"
+    "cost": "2500",
+    cat: 3,
   },
   {
     "date": "3.1.2018",
@@ -493,7 +565,8 @@
     "damage": "Sturm hat Ziegel 'weggeluftet'",
     "damagedPart": "Dach",
     "description": " ",
-    "cost": "3000.- cHF"
+    "cost": "3000.- cHF",
+    cat: 3,
   },
   {
     "date": "03.07.2018",
@@ -501,7 +574,8 @@
     "damage": "Am Dienstag, 3.7.2018 wurde uns infolge Sintflutartigen Regenfällen, welche stundenlang andauerten, ein Teil unseres Kellers überflutet. Wir haben sofort den Dachdecker Kohli, Mühleberg aufgefordert, die Situation des Dachkanals zu überprüfen. Dieser hat uns empfohlen, mit einer Rohrreinigungsfirma den Kanal des Dachwassers durchzuspülen. Dies wurde gleichentags durch die Firma Rohrreinigungen Flückiger erledigt. Gleichentags wurde am Nachmittag auf unseren Wunsch von der Firma Kohli Bedachungen ein provisorischer Dachwasser Ablauf erstellt. Da die Leitung zu nass war, wurde vereinbart, in ein paar Tagen mit der Kamera die Leitung auf Schäden zu überprüfen. Diese Kamera-Aufzeichnung wurde am 9.07.2018 durch die Firma Flückiger durchgeführt. Wir wurden auf die Firma InnoService aufmerksam gemacht, mit welcher wir am 31.07.2018 einen Termin vereinbaren konnten. Am 31.07.18 wurde die Leitung nochmals mit einer Kamera durch die Fa. InnoService inspiziert. Wir haben mit dem Geschäftsführer von InnoService abgemacht, dass er uns eine Offerte für eine 'Rohr in Rohr'Sanierung zustellt. Dürfen wir Sie anfragen, ob von seitens GVB eine Kostenbeteiligung möglich Ist?",
     "damagedPart": "",
     "description": "Provisorischer Dachwasserablauf ersellen lassen ",
-    "cost": "ca. Fr. 5 000.- bis Fr. 7 000.-"
+    "cost": "ca. Fr. 5 000.- bis Fr. 7 000.-",
+    cat: 1
   },
   {
     "date": "24.7.2018",
@@ -509,15 +583,18 @@
     "damage": "Abwasser Rohrbruch bei WC.",
     "damagedPart": "Mauer hinter WC.",
     "description": "Mauer öffnen, abspitzen, defektes Rohr ersetzen. Schaden wurde schon mit Herr Durband besprochen und gemeldet. Herr Durband hat alle Fotos vom Schaden.",
-    "cost": "3000.00"
+    "cost": "3000.00",
+    cat: 3
   },
+
   {
     "date": "19.07.2018",
     "measure": "",
     "damage": "Herr Brunner wollte ein einige Holzbretter vom Zivilschutzraum in die Einstellhalle transportieren. In der Nähe der Verglasung zum Mehrfamilienhaus Fuhrenweg 7 C rutschte ihm ein Brett weg und knallte in die Verglasung",
     "damagedPart": "Verglasung",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "27.07.2018",
@@ -525,7 +602,8 @@
     "damage": "Beim Schleudergang machte die Waschmaschine enormen Lärm, danach kam eine Fehlermeldung, welche das Aufgebot eines Technikers notwendig machte",
     "damagedPart": "",
     "description": "Ersatz der Waschmaschine ",
-    "cost": "1432.00"
+    "cost": "1432.00",
+    cat: 3
   },
   {
     "date": "29.08.18",
@@ -533,7 +611,8 @@
     "damage": "Steinkorbzaun umgerissen und oder umgefahren",
     "damagedPart": "Steinkörbe und Rasenfläche",
     "description": " ",
-    "cost": "5000.-"
+    "cost": "5000.-",
+    cat: 3
   },
   {
     "date": "03.01.2018",
@@ -541,7 +620,8 @@
     "damage": "Sturmwind Der starke Sturm beschädigte das Welleternit-Dach, das vermutlich durch ein früheres Hagelereignis unsichtbar angeschlagen wurde",
     "damagedPart": "Welleternit-Dach",
     "description": " Bisher wurden keine Offerten eingeholt. Es war beabsichtigt, die Situation mit dem Schadenexperten zu besichtigen.",
-    "cost": ""
+    "cost": "",
+    cat: 3,
   },
   {
     "date": "26.07.2018",
@@ -549,7 +629,8 @@
     "damage": "Rohrreiniger wollte Leitung vom Lavabo spülen und ist durchgebrochen. Aufgrund der Küchensanierung wurde von dieser Seite in Richtung Badezimmer aufgespitzt. Wenn das Leck nicht gefunden wird, muss die Badewanne ausgeschnitten werden.",
     "damagedPart": "",
     "description": "Sanitär und Rohrreiniger konnten das Wasser im 2. OG wegwischen. ",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "28.7.2018",
@@ -557,7 +638,8 @@
     "damage": "ein kurzes heftiges Gewitter, begleitet von Sturmböen zog über die Region Hünibach.Die Sonennstore auf dem Balkon der Partei Otziger war nicht ganz eingezogen. Eine Windböe beschädigte den Stoff. Das Gestänge erlitt keinen Schaden",
     "damagedPart": "Sonnenstorenstoff",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "10.07.2018",
@@ -565,7 +647,8 @@
     "damage": "Blitzschlag, Heizung defekt (Elektronik)",
     "damagedPart": "Heizung, Elektronik defekt",
     "description": "Reparatur ",
-    "cost": "2259.00"
+    "cost": "2259.00",
+    cat: 0
   },
   {
     "date": "19.06.2018",
@@ -573,7 +656,8 @@
     "damage": "Auslaufen von rostiger Flüssigkeit aus dem defekten Heizungskessel.",
     "damagedPart": "Boden in im Heizungs-Trocknungsraum",
     "description": " Sind wir für einen Neuanstrich versichert?",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "27.07.2018",
@@ -581,7 +665,8 @@
     "damage": "Durch das Hochwasser vom letzten Wochenende (27. – 29. Juli) wurden Teile des Grundstücks und die Grundwasser-Pumpenschächte mit Schlamm gefüllt.",
     "damagedPart": "Grundwasser-Pumpen-Schächte welche zum Zentralgebäude gehören wurden beschädigt",
     "description": "- Abpumpen und Entleeren der Schächte - Reinigen der Pumpen und Wärmetauscher - Funktionskontrolle der elektrischen Geräte - Aufräumarbeiten auf dem Gelände ",
-    "cost": ""
+    "cost": "",
+    cat: 0
   },
   {
     "date": "28.07.2018",
@@ -589,7 +674,8 @@
     "damage": "am 28. Juli 2018 ist vormittags ist ein heftiges Gewitter aufgetreten. Bei unseren Nachbarn - Fam. Wüthrich schlug ein Blitz ein.",
     "damagedPart": "keine Schäden am Gebäude sichtbar",
     "description": " Eventuell müsste die Elektrik im ganzen Haus durch einen Elektriker auf allfällige Schäden überprüft werden",
-    "cost": "2 x 200 CHF für Lampen (Philips hue LightStripes+). unbekannte Kosten für Überprüfung der Elektrik und Reparatur der beschädigten Steckdose"
+    "cost": "2 x 200 CHF für Lampen (Philips hue LightStripes+). unbekannte Kosten für Überprüfung der Elektrik und Reparatur der beschädigten Steckdose",
+    cat: 0
   },
   {
     "date": "17.07.2018",
@@ -597,7 +683,8 @@
     "damage": "Ein Dachziegel hat sich vom Dach beim Chemineerohrdurchgang gelöst und rutschte herunter in das Gartenbeet.",
     "damagedPart": "Dachziegel",
     "description": "Ein Dachdecker wurde durch uns telefonisch avisiert, da wir in den Ferien waren. Der Schaden wurde am nächsten Tag 18.07.18 durch die Firma Bauimpuls AG in Heimberg behoben. ",
-    "cost": "126.30"
+    "cost": "126.30",
+    cat: 3,
   },
   {
     "date": "25.07.18",
@@ -605,15 +692,17 @@
     "damage": "Undichte Stelle auf dem Dach. Wasser wurde im Bade bemerkt da die Decke nass wurde.",
     "damagedPart": "Dach, Sparren, Unterdach, Pfätten, Isolation, Badezimmer Decke, Badezimmer Wand, unvorhergesehenes erst bei der Demontage. Der Schreiner kommt nächste Woche um den Schaden aufzunehmen betreffend Offerte.",
     "description": "Ich muss alles rausreissen was nass ist, der Schimmelpilz ist überall im Holz. Das Dach muss bereits länger undicht gewesen sein.... jedoch nicht bemerkt da das Wasser in der Unterkonstruktion den weg gefunden hat.",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "20.07.2018",
     "measure": "",
     "damage": "Stores endommagés par la grêle",
     "damagedPart": "Stores",
-    "description": " Les stores ont été placés en 2014. J\\'étais en vacances le jour de la grêle",
-    "cost": ""
+    "description": " Les stores ont été placés en 2014. J'étais en vacances le jour de la grêle",
+    "cost": "",
+    cat: 3,
   },
   {
     "date": "28.07.2018",
@@ -621,7 +710,8 @@
     "damage": "Wasser dringt durch Decke in Küche 1. OG",
     "damagedPart": "Decke Küche, Boden Dachgeschoss",
     "description": "Ursache des Wasserdurchbruchs finden. Sanitär-Techniker war vor Ort, er ist sich auch nicht sicher wo genau ein Defekt vorliegt. Fakt ist, im WC-Spülkasten war ein Ventil nicht i.O. und wurde ersetzt. Firma für Entfeuchtung wurde aufgeboten.",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "02.07.2018",
@@ -629,7 +719,8 @@
     "damage": "Hagel",
     "damagedPart": "Fassade (Umleibung); Lamellen",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "27.7.2018",
@@ -637,7 +728,8 @@
     "damage": "Überschwemmung UG und EG",
     "damagedPart": "UG und EG",
     "description": "Auspumpen der UGS Ein Mitarbeiter der GVB (Herr Born) war am letzten Samstag bereits vor Ort und hat den Schaden begutachtet. Allenfalls hat er bereits eine Schadensmeldung eröffnet.",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "24.06.2018",
@@ -645,7 +737,8 @@
     "damage": "Brand nach Dampftram",
     "damagedPart": "Garten",
     "description": "Mit Wasserschlauch im Graten gelöscht Dampftram hat Russpartikel auf trockene Zypressen abgegeben. Diese haben sich in der Krone entzündet und einen Brand ausgelöst. Die Feuerwehr Stadt Bern hat einen Rapport gemacht.",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "03.06.2018",
@@ -653,7 +746,8 @@
     "damage": "Beschädigung der Fensterstore durch Sturm",
     "damagedPart": "Store",
     "description": " Die Mieter, ein älteres Ehepaar, konnten das genaue Datum des Schadens nicht mehr nennen, jedoch sei es beim Sturm Anfang Juni 2018 geschehen.",
-    "cost": "1\\'119.00"
+    "cost": "1'119.00",
+    cat: 3 // blinds
   },
   {
     "date": "28.07.2018",
@@ -661,7 +755,8 @@
     "damage": "Wasserleitungsbruch der Zuleitung aussen.",
     "damagedPart": "Wasserleitung (Zuleitung zum Haus)",
     "description": "Notversorgung via Hydranten Wir sind durch die IB Langenthal mit einer Notleitung versorgt im Moment. Haben uns am Samstag 28.07. telefonisch mit dem Pikettmonteur abgesprochen, dass wir bis Montag warten, wenn möglich. Doch am Sonntag mussten wir den Monteur kommen lassen da das Wasser im Kellerabwasserkanal anstieg. Dann blieb es konstant und wir warteten bis heute Montag , wo uns ein Notanschluss von dem nahe gelegenen Hydranten gelegt wurde von der Firma IBL. Es benötigt eine neue Leitung und Baumaschinen. Aber am besten wenden Sie sich gleich an die Firma IBL.",
-    "cost": "habe noch keine Ahnung.Info IBL."
+    "cost": "habe noch keine Ahnung.Info IBL.",
+    cat: 1,
   },
   {
     "date": "24.07.2018",
@@ -669,7 +764,8 @@
     "damage": "Die Fassade der Liegenschaft wurde versprayt",
     "damagedPart": "Fassadenteile",
     "description": "Die Entfernung der Sprayereien wurde unserem Maler, Stöckli & Partner AG, in Auftrag gegeben. ",
-    "cost": "ca 1000.00"
+    "cost": "ca 1000.00",
+    cat: 2
   },
   {
     "date": "27.07.2018",
@@ -677,7 +773,8 @@
     "damage": "Die Simme ist durch auslaufen eines Gletschersees über die Ufer getreten.",
     "damagedPart": "Güllekasten voll mit Wasser und Schlamm Wagenschopf mit Schlamm bedekt, Umgebung mit Schlamm und Schwemmholz bedekt. Ins Holzschnitzellager ist Wasser eingedrungen.",
     "description": "Wegräumen der Schlamm, Holz und Kies Ablagerung. ",
-    "cost": "2000.-"
+    "cost": "2000.-",
+    cat: 1,
   },
   {
     "date": "18.07.2018",
@@ -685,7 +782,8 @@
     "damage": "Ein Wespennest wurde am Unterdach gefunden.",
     "damagedPart": "",
     "description": "Alder Ungeziefer- und Schädlingsbekämpfung wurde der Auftrag für die Entfernung und die Bekämpfung der Wespen erteilt. Die Entfernung des Nestes und die Bekämpfung erfolgten sogleich. ",
-    "cost": "390.65"
+    "cost": "390.65",
+    cat: 4
   },
   {
     "date": "10.07.2018",
@@ -693,15 +791,17 @@
     "damage": "Unter dem Glasdach bei der Sonnenstore wurden zwei Wespennester entdecket.",
     "damagedPart": "",
     "description": "Alder Ungeziefer- und Schädlingsbekämpfung wurde direkt aufgeboten. Die Wespennester wurden durch Herrn Allemann direkt entfernt und die Wespen bekämpft. ",
-    "cost": "277.25"
+    "cost": "277.25",
+    cat: 4
   },
   {
     "date": "14.4.2018",
     "measure": "Wasseraufbereitungsanlage ausser Betrieb genommen und durch eine neue ersetzt.",
     "damage": "Defektes Rückspülventil verursacht einen Schaden in Form von aussergewöhnlichen Wassermehrverbrauch von 700 m3.",
     "damagedPart": "keine",
-    "description": "Wasseraufbereitungsanlage ausser Betrieb genommen und durch eine neue ersetzt. Auf Grund der letzten Wasserzählerablesung vom 14.4.2018 wurde bei uns ein aussergewöhnlich hoher Wasserverbrauch festgestellt. Schätzungsweise das 4-5 fache der letzen Jahre, was sich in einem zusätzlichen Wasserverbrauch von 700 m3 mehr als der Durchschnitt der letzten drei Jahre, resp. einem Schaden von CHF 3\\'360.- für Wasser und Abwasserkostenkosten. Davon hat die SWG einen Anteil von CHF 272.- übernommen. Nach dem Besuch eines Mitarbeiters vom SWG konnte die Ursache, in Form eines defekten Rückspül-Ventils an der Wasseraufbereitungsanlage herausgefunden werden, leider aber viel zu spät, bereits waren mehr als 700 m3 ungenützt abgelaufen. Die defekte Anlage wurde darauf hin von uns durch eine neue Anlage ersetzt. Wir möchten Sie daher höflich fragen ob von Ihrer Seite dieser Schaden, oder ein Teil des Schadens übernommen wird? Mit freundlichen Grüssen Marcel Wiederkehr",
-    "cost": ""
+    "description": "Wasseraufbereitungsanlage ausser Betrieb genommen und durch eine neue ersetzt. Auf Grund der letzten Wasserzählerablesung vom 14.4.2018 wurde bei uns ein aussergewöhnlich hoher Wasserverbrauch festgestellt. Schätzungsweise das 4-5 fache der letzen Jahre, was sich in einem zusätzlichen Wasserverbrauch von 700 m3 mehr als der Durchschnitt der letzten drei Jahre, resp. einem Schaden von CHF 3'360.- für Wasser und Abwasserkostenkosten. Davon hat die SWG einen Anteil von CHF 272.- übernommen. Nach dem Besuch eines Mitarbeiters vom SWG konnte die Ursache, in Form eines defekten Rückspül-Ventils an der Wasseraufbereitungsanlage herausgefunden werden, leider aber viel zu spät, bereits waren mehr als 700 m3 ungenützt abgelaufen. Die defekte Anlage wurde darauf hin von uns durch eine neue Anlage ersetzt. Wir möchten Sie daher höflich fragen ob von Ihrer Seite dieser Schaden, oder ein Teil des Schadens übernommen wird? Mit freundlichen Grüssen Spider Man",
+    "cost": "",
+    cat: 3, // it's water plant replacement.. like a device?
   },
   {
     "date": "06.07.2018",
@@ -709,7 +809,8 @@
     "damage": "Die Fäkalienpumpe im UG stellt nicht mehr ab und in der Toilette im Studio hat sich eine Wasserlache gebildet. Diese konnte sofort gereinigt werden. Das Gerät muss aber gem. Fa. Bacher AG, Sanitär, Thun Herren Lüthy und Mathys ersetzt werden. Sie bitten mich das Gerät wie das vorherige im Sanitätshop.de zu beschaffen.",
     "damagedPart": "Bisher keine",
     "description": "Abstellen der Wasserzufuhr durch San. Inst. und Abhängen aller Zufuhren zur Pumpe. Die Lieferfirma Sanitär und Heizungsshop Darmstädter Strasse 8 64395 Brensbach/D hat mir den falschen Typ geliefert, was mittlerweile mit Rücksendung und Neusendung sowie Zollproblemen per 27.7.18 erledigt wurde. Heute, 30.7.18 wird die Pumpe angeschlossen.",
-    "cost": "ca. Fr. 1500.--"
+    "cost": "ca. Fr. 1500.--",
+    cat: 1,
   },
   {
     "date": "22.07.2018",
@@ -717,7 +818,8 @@
     "damage": "Wespennest hinter der Fassade",
     "damagedPart": "Fassade, Isolation Fassade plus ev. Isolation Dach.",
     "description": "Feuerwehr Oberdiessbach avisiert. Lauf Kommandant wird sich ein Spezialist der Feuerwehr melden um den Schaden zu begutachten. Die Rechnung werde an uns gestellt und wir müssten diese dann an die GVB weiterleiten. ",
-    "cost": ""
+    "cost": "",
+    cat: 4,
   },
   {
     "date": "02.07.2018",
@@ -725,7 +827,8 @@
     "damage": "Hagelschaden per obgenanntes Dato. Hagelschaden durch Eiergrosse Hagelkörner. Regionaler Niedergang.",
     "damagedPart": "Westliches Dachlichtband aus Plexiglas eingebunden im Dach.",
     "description": " ",
-    "cost": "Ca. Fr. 1\\'000.--"
+    "cost": "Ca. Fr. 1'000.--",
+    cat: 3, // hail damage
   },
   {
     "date": "28.07.2018",
@@ -733,7 +836,8 @@
     "damage": "Ziegel sind verschoben an windexponierter Stelle, siehe Fotos im Anhang",
     "damagedPart": "Wenige Ziegelreihen auf dem Dach",
     "description": " Das Ereignisdatum ist das Datum der Entdeckung des Schadens. Da Ferienhaus sind wir selten hier. Wahrscheinlicher Schadenseintritt zwischen Nov. 2017 und 15.07.2018. Wir sind noch bis 10.8.2018 anwesend.",
-    "cost": "nicht bekannt, vermutlich max. 1h Arbeit"
+    "cost": "nicht bekannt, vermutlich max. 1h Arbeit",
+    cat: 3
   },
   {
     "date": "27.07.2018",
@@ -741,7 +845,8 @@
     "damage": "Glasscheibe im Wohnzimmer EG einen Sprung innen durch Spannung (Sonne)",
     "damagedPart": "Glasscheibe Wohnen Erdgeschoss",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3,
   },
   {
     "date": "03.07.2018",
@@ -749,7 +854,8 @@
     "damage": "Aufgrund des Unwetters/heftigen Regens in der Nacht vom 02. auf den 03. Juli ist das Regenwasser bei meinem Parkplatz nicht mehr abgeflossen; ich habe dann notfallmässig 'RohrMax' aufgeboten. Leider konnte nicht mehr verhindert werden, dass das aufgestaute Wasser in den Luftschutzkeller eindrang. Das Wasser im Luftschutzkeller musste abgepumpt und die vom Unwetter-Dreck verstopften Leitung gesäubert werden. Ich konnte alles Mobiliar aus dem Luftschutzkeller entfernen, so dass zumindest beim Mobiliar keinen Schaden entstand.",
     "damagedPart": "Luftschutzkeller",
     "description": "RohrMax vor Ort bestellt, um Luftschutzkeller auszupumpen ",
-    "cost": "682.55"
+    "cost": "682.55",
+    cat: 1,
   },
   {
     "date": "20.07.2018",
@@ -757,7 +863,8 @@
     "damage": "Sprayereien",
     "damagedPart": "Fassade",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "05.07.2018",
@@ -765,7 +872,8 @@
     "damage": "Durch heftige Niederschläge konnte das Dachwasser in der Sickerleitung nicht rasch genug abfliessen. Bei Kontrollschacht der Sickerleitung wurde dadurch der Dohlendeckel aufgedrückt und das Treppenpodest unterspült.",
     "damagedPart": "",
     "description": " ",
-    "cost": "4500"
+    "cost": "4500",
+    cat: 1
   },
   {
     "date": "26.07.18",
@@ -773,7 +881,8 @@
     "damage": "Ein Glasgefäss ist aus dem Spiegelschrank herunter auf den Keramik-Waschtisch gefallen. Zu diesem Zeitpunkt ist kein Schaden entstanden. Aber ca. 5 Minuten später beim Händewaschen hat es einen Sprung/Spalt im Waschtisch gegeben.",
     "damagedPart": "Waschtisch aus Keramik",
     "description": "Spalt mit Klebeband abgeklebt, damit der Waschtisch trotzdem vorläufig noch genutzt werden kann. -",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "27.07.2018",
@@ -781,7 +890,8 @@
     "damage": "Wespennest",
     "damagedPart": "Aussenschalung und Dachfirst",
     "description": "Offerte von Rentokill verlangt ",
-    "cost": ""
+    "cost": "",
+    cat: 4,
   },
   {
     "date": "03.01.2018",
@@ -789,7 +899,8 @@
     "damage": "Dach beschädigt",
     "damagedPart": "Dachziegel",
     "description": " ",
-    "cost": "108-50"
+    "cost": "108-50",
+    cat: 3 // roof
   },
   {
     "date": "24.07.2018",
@@ -797,7 +908,8 @@
     "damage": "Gewittersturm riss prov. Abdeckung weg. Es regnete ins Gebäude. Pavatex-Decke wurde durchnässt",
     "damagedPart": "Angehängte Pavatex-Decke",
     "description": " Reinigungsarbeiten in Eigenleistung durch Volvo center AG",
-    "cost": "Fr. 5000.00"
+    "cost": "Fr. 5000.00",
+    cat: 1
   },
   {
     "date": "24.07.2018",
@@ -805,7 +917,8 @@
     "damage": "Nachdem die Fassaden der Toilettenanlage anfang Juli 2018 gereinigt wurde, wurden im Zeitraum vom 11.07.2018 – 24.07.2018 erneut Graffitis angebracht.",
     "damagedPart": "Fassade",
     "description": " ",
-    "cost": "ca. 450"
+    "cost": "ca. 450",
+    cat: 2
   },
   {
     "date": "03.07.2018",
@@ -813,7 +926,8 @@
     "damage": "Am 3. Juli am Morgen fiel starker Regen mit Windböen in Bern, dies verursachte Überschwemmungen im Quartier.",
     "damagedPart": "Im Keller und in Serverraum war den Boden komplett nass. Rohrleitungen verstopft.",
     "description": "Wir versuchten zuerst das Wasser aufzunehmen aber ohne Erfolg, dann haben wir die Feuerwehr angerufen. Es wurde auch einen Wassersauger durch die Firma Honegger organisiert. Zudem musste die Firma Pro Rohr AG die Boden- und Dachwasserablaufleitung mit Hochdruck spülen und reinigen. ",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "25.07.2018",
@@ -821,7 +935,8 @@
     "damage": "Beschädigung des Garten/Rasen durch Wildtiere.",
     "damagedPart": "keine",
     "description": " Der Rasen weist Löcher von Hufspuren auf (wahrscheinlich Rehe). Im Weiteren wurde der Rasen und Pflanzen durch angefressen/entwurzelt.",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "23.7.18",
@@ -829,7 +944,8 @@
     "damage": "Der Schimmel wurde im Keller entdeckt.",
     "damagedPart": "Keller Boden/Wände",
     "description": "Es wurde ein Bauexperte aufgeboten. Dieser wird den Schaden am 31.8.18 vor Ort besichtigen und Offerten für die Sanierung einholen. ",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "20.07.2018",
@@ -837,7 +953,8 @@
     "damage": "Wassereinbruch",
     "damagedPart": "",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "31.05.2018",
@@ -845,15 +962,8 @@
     "damage": "Wasserunterbruch",
     "damagedPart": "",
     "description": " ",
-    "cost": ""
-  },
-  {
-    "date": "27.07.2018",
-    "measure": "",
-    "damage": "",
-    "damagedPart": "",
-    "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 1
   },
   {
     "date": "12.12.2017",
@@ -861,7 +971,8 @@
     "damage": "Rückstau durch Fäkalien",
     "damagedPart": "Nasse Raum- und Oberfläche Kellerraum",
     "description": "Schadenaufnahme, diverse Feuchtigkeitsmessungen. Raum- und Oberflächentrocknung Leider haben wir es versäumt, den Wasserschaden rechtzeitig anzumelden.",
-    "cost": "1\\'797.45"
+    "cost": "1'797.45",
+    cat: 1
   },
   {
     "date": "26.07.2018",
@@ -869,7 +980,8 @@
     "damage": "Graffiti an Fassade",
     "damagedPart": "Fassade",
     "description": "Maler wurde beauftragt ",
-    "cost": ""
+    "cost": "",
+    cat: 2
   },
   {
     "date": "19.04.2018",
@@ -877,7 +989,8 @@
     "damage": "Steckdichtung war nicht korrekt eingesetzt im Sifonanschlusswinkel und die Einstecktiefe war sehr knapp",
     "damagedPart": "Boden und Wände sehr nass und Fussleisten verfault",
     "description": "-Lecksuche -Neuer Waschtischsifon montieren -Fussleisten demontiert -Öffnungsarbeiten und Bohrarbeiten für Trocknungsarbeiten -Trocknungsgeräte eingerichtet -Trocknung sofort gestartet ",
-    "cost": ""
+    "cost": "",
+    cat: 1,
   },
   {
     "date": "31.05.2018",
@@ -885,7 +998,8 @@
     "damage": "Bei dem Hagelgewitter wurde das Dach des Wintergartens von Familie Beer beschädigt. An einer Einschlagstelle dringt Wasser ein, was bei Frost zum Bersten des Glases führen kann.",
     "damagedPart": "Dach des Wintergartens von Familie Beer, HP links",
     "description": " ",
-    "cost": "ca. 13300.00"
+    "cost": "ca. 13300.00",
+    cat: 1
   },
   {
     "date": "26.07.2018",
@@ -893,7 +1007,8 @@
     "damage": "Rinnstelle / Wasseraustritt -> weitere Infos folgen",
     "damagedPart": "Wasser tropft von Decke + läuft Wände runter - Schadensursache muss noch genauer festgestellt werden!",
     "description": "Suchen und Beheben Rinnstelle Folgen nach",
-    "cost": "noch unbekannt"
+    "cost": "noch unbekannt",
+    cat: 1
   },
   {
     "date": "26.07.2018",
@@ -901,7 +1016,8 @@
     "damage": "Brand bei Umbau / Sanierung Schulhaus im Saal Dachgeschoss. Der Brand ist in einer Pflastermulde mit Holz entfacht. Die Feuer konnte das Feuer löschen.",
     "damagedPart": "Dachkonstruktion und Boden",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "20.07.2018",
@@ -909,7 +1025,8 @@
     "damage": "Durch das heftige Gewitter mit Hagel wurden die Ortladen beschädigt.",
     "damagedPart": "Ortladen, weiteres nicht bekannt",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "15.07.2018",
@@ -917,7 +1034,8 @@
     "damage": "3206",
     "damagedPart": "Fenster",
     "description": "Ersatz wurde in Auftrag gegeben. ",
-    "cost": "ca. 2400.00 (analog Schadenfall vom 21.05.2018)"
+    "cost": "ca. 2400.00 (analog Schadenfall vom 21.05.2018)",
+    cat: 3
   },
   {
     "date": "20.07.2018",
@@ -925,7 +1043,8 @@
     "damage": "Sturm mit starkem Wind und Hagel gegen die Westfassade",
     "damagedPart": "Westfassade - Holz (getupft)",
     "description": " ",
-    "cost": ""
+    "cost": "",
+    cat: 3
   },
   {
     "date": "25.07.2018",
@@ -933,7 +1052,8 @@
     "damage": "Starkes Gewitter mit Hagelschlag",
     "damagedPart": "Kellerräume unter Wasser und mit Geröll verdreckt. Vor allem Trocknungs- und Reinigungsarbeiten.",
     "description": " ",
-    "cost": "unbekannt"
+    "cost": "unbekannt",
+    cat: 1,
   },
   {
     "date": "16.07.2018",
@@ -941,7 +1061,8 @@
     "damage": "wasser drückte durch Kamin",
     "damagedPart": "mauer farbe-verputz",
     "description": " ",
-    "cost": "1200.-"
+    "cost": "1200.-",
+    cat: 1
   },
   {
     "date": "23.07.2018",
@@ -949,7 +1070,8 @@
     "damage": "Glasbruch",
     "damagedPart": "Glasscheibe",
     "description": " ",
-    "cost": "912.20"
+    "cost": "912.20",
+    cat: 3
   },
   {
     "date": "11.06.2018",
@@ -957,7 +1079,8 @@
     "damage": "Aufgrund des Sommergewitter (mit Hagel) wurde die Lamellenstore beschädigt.",
     "damagedPart": "Lamellenstore im Wohnzimmer",
     "description": " ",
-    "cost": "2442.65"
+    "cost": "2442.65",
+    cat: 3
   },
   {
     "date": "31.07.2018",
@@ -965,6 +1088,7 @@
     "damage": "Grosses Wespennest an Sonnenstore festgestellt. Kosten für Entfernung (durch Feuerwehr entfernt worden) und Schaden am Sonnenstoren (grosses Loch)",
     "damagedPart": "Sonnenstore",
     "description": "Entfernung Wespennest (Feuerwehr) ",
-    "cost": "2000"
+    "cost": "2000",
+    cat: 4
   }
 ]
