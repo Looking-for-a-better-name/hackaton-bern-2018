@@ -1,7 +1,8 @@
 const natural = require('natural')
-const { map } = require('ramda')
+const { prop,  map, tap, pipe } = require('ramda')
 const claimsDe = require('../data/dbDeZiped')
 const claimsEn = require('../data/dbEn')
+const _ = pipe
 
 const LancasterStemmer = require('./node_modules/natural/lib/natural/stemmers/lancaster_stemmer');
 const PorterStemmerRu = require('./node_modules/natural/lib/natural/stemmers/porter_stemmer_ru');
@@ -17,8 +18,6 @@ const toClaimType = label => ({
   3: 'other',
   4: 'insects'
 }[label] || 'other')
-
-
 
 const getStrings = e =>
   [e.action, e.desc, e.dmg, e.part].filter(Boolean).join(' ')
@@ -61,13 +60,31 @@ const accuracyDe = claimsDe.reduce((acc, curr) => {
     all: 0,
   })
 
+const saveClassifier = (dmgClassifier, classifierFile) =>
+  new Promise((resolve, reject) =>
+    dmgClassifier.save(classifierFile, (err, classifier) =>
+      err ? reject(err) : resolve(classifier)))
+
+const loadClassifier = (classifierFile) =>
+  new Promise((resolve, reject) =>
+    natural.BayesClassifier.load(classifierFile, null, (err, classifier) =>
+      err ? reject(err) : resolve(classifier)
+    ))
+
+// Test serialization
+saveClassifier(langClassifier, classifierFile)
+  .then(e => {
+    console.log('saved')
+  })
+  .then(e => loadClassifier(classifierFile))
+  // .then(classifier =>
+  //   claimsDe.map(_(prop('dmg'), classifier.classify)))
+  .then(tap(console.warn))
+  .catch(console.error)
+
 console.warn(accuracyDe, accuracyDe.de / accuracyDe.all)
 console.warn(accuracyEn, accuracyEn.en / accuracyEn.all)
-console.warn(langClassifier.classify('department)'))
-console.warn(langClassifier.classify('department'))
-console.warn(langClassifier.classify('(removed'))
-console.warn(langClassifier.classify('removed'))
-console.warn(langClassifier.classify('Niederschläge'))
+
 //
 // // random is: 25.0 %
 // // our is: 54.0 %
@@ -89,28 +106,4 @@ console.warn(langClassifier.classify('Niederschläge'))
 //     all: langClassifier.classify(text)
 //   })
 // })
-//
-// const saveClassifier = (dmgClassifier, classifierFile) =>
-//   new Promise((resolve, reject) =>
-//     dmgClassifier.save(classifierFile, (err, classifier) =>
-//       err ? reject(err) : resolve(classifier)))
-//
-// const loadClassifier = (classifierFile) =>
-//   new Promise((resolve, reject) =>
-//     natural.BayesClassifier.load(classifierFile, null, (err, classifier) =>
-//       err ? reject(err) : resolve(classifier)
-//     ))
-//
-// // Test serialization
-// saveClassifier(langClassifier, classifierFile)
-//   .then(e => {
-//     console.log('saved')
-//   })
-//   .then(e => loadClassifier(classifierFile))
-//   .then(classifier => {
-//     texts.map(text => {
-//       console.log({ dmg: classifier.classify(text) })
-//     })
-//   })
-//   .catch(console.error)
 //
